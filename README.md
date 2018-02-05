@@ -55,7 +55,7 @@ SAS code to list 3 records from each file in a zipped archive.  Keywords: sas sq
           end;
        run;quit;
 
-       *
+       filename inzip ZIP 'd:\zip\archive.zip';
        data _null_;
          if _n_=0 then do;
            * get contents of archive;
